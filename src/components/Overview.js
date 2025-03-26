@@ -1,28 +1,28 @@
-import React from 'react';
-import './Overview.css';
+import React from "react";
+import "./Overview.css";
 
 function Overview() {
   const recentUsers = [
-    { id: 1, name: 'Mike', avatar: 'https://via.placeholder.com/50' },
-    { id: 2, name: 'Jill', avatar: 'https://via.placeholder.com/50/FF9999/000' },
-    { id: 3, name: 'Jane', avatar: 'https://via.placeholder.com/50/FFC966/000' },
+    { id: 1, name: "Mike", avatar: "/components/w3school/avatar2.png" },
+    { id: 2, name: "Jill", avatar: "/components/w3school/avatar5.png" },
+    { id: 3, name: "Jane", avatar: "/components/w3school/avatar6.png" },
   ];
 
   const recentComments = [
     {
       id: 1,
-      name: 'John',
-      date: 'Sep 29, 2014, 9:12 PM',
-      avatar: 'https://via.placeholder.com/60/99CCFF/000',
-      text: 'Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet...'
+      name: "John",
+      date: "Sep 29, 2014, 9:12 PM",
+      avatar: "/components/w3school/avatar3.png",
+      text: "Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet...",
     },
     {
       id: 2,
-      name: 'Bo',
-      date: 'Sep 28, 2014, 10:15 PM',
-      avatar: 'https://via.placeholder.com/60/E6E6E6/000',
-      text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...'
-    }
+      name: "Bo",
+      date: "Sep 28, 2014, 10:15 PM",
+      avatar: "/components/w3school/avatar1.png",
+      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
   ];
 
   return (
@@ -31,7 +31,7 @@ function Overview() {
         <div className="bar-block">
           <label>New Users</label>
           <div className="bar orange">
-            <div className="bar-fill" style={{ width: '50%' }}>
+            <div className="bar-fill" style={{ width: "50%" }}>
               50%
             </div>
           </div>
@@ -39,12 +39,69 @@ function Overview() {
         <div className="bar-block">
           <label>Bounce Rate</label>
           <div className="bar red">
-            <div className="bar-fill" style={{ width: '75%' }}>
+            <div className="bar-fill" style={{ width: "75%" }}>
               75%
             </div>
           </div>
         </div>
       </div>
+
+      <div className="dashboard-main">
+      <div className="dashboard-regions">
+          <h2>Regions</h2>
+          <img
+            src="/components/w3school/region.jpg"
+            alt="Map"
+            className="regions-map"
+          />
+        </div>
+
+
+        <div className="dashboard-feeds">
+          <h2>Feeds</h2>
+          <div className="feed-item">
+            <span className="feed-icon">👤</span>
+            <div className="feed-text">New record, over 90 views.</div>
+            <div className="feed-time">10 mins</div>
+          </div>
+
+          <div className="feed-item">
+            <span className="feed-icon">🔔</span>
+            <div className="feed-text">Database error.</div>
+            <div className="feed-time">15 mins</div>
+          </div>
+
+          <div className="feed-item">
+            <span className="feed-icon">👥</span>
+            <div className="feed-text">New record, over 40 users.</div>
+            <div className="feed-time">17 mins</div>
+          </div>
+
+          <div className="feed-item">
+            <span className="feed-icon">💬</span>
+            <div className="feed-text">New comments.</div>
+            <div className="feed-time">25 mins</div>
+          </div>
+
+          <div className="feed-item">
+            <span className="feed-icon">🔖</span>
+            <div className="feed-text">Check transactions.</div>
+            <div className="feed-time">28 mins</div>
+          </div>
+
+          <div className="feed-item">
+            <span className="feed-icon">💻</span>
+            <div className="feed-text">CPU overload.</div>
+            <div className="feed-time">35 mins</div>
+          </div>
+
+          <div className="feed-item">
+            <span className="feed-icon">🔗</span>
+            <div className="feed-text">New shares.</div>
+            <div className="feed-time">39 mins</div>
+          </div>
+        </div>
+        </div>
 
       <div className="bottom-section">
         <div className="countries-panel">
@@ -115,9 +172,7 @@ function Overview() {
                 <span className="comment-author">{comment.name}</span>
                 <span className="comment-date">{comment.date}</span>
               </div>
-              <div className="comment-text">
-                {comment.text}
-              </div>
+              <div className="comment-text">{comment.text}</div>
             </div>
           </div>
         ))}
