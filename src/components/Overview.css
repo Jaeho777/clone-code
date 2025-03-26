@@ -159,6 +159,63 @@
     margin-top: 16px;
     border-top: 1px solid #ccc;
   }
+
+
+  .dashboard-main {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .dashboard-regions {
+    width: 40%;
+  }
+  
+  .dashboard-regions h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .regions-map {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  .dashboard-feeds {
+    flex: 1;
+  }
+  
+  .dashboard-feeds h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .feed-item {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: space-between;
+  }
+  
+  .feed-icon {
+    margin-right: 10px;
+  }
+  
+  .feed-text {
+    flex: 1;
+  }
+  
+  .feed-time {
+    color: #666;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+
   @media (max-width: 1200px) {
     .bottom-section {
       gap: 12px;
