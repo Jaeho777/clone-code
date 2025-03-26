@@ -1,0 +1,232 @@
+/* Reset some basic margins/padding */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+  }
+  
+  /* Overall Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Header (Top Bar) */
+  .header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 50px;
+  }
+  
+  .header-left {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .header-right {
+    margin-left: auto;
+  }
+  
+  /* Main Wrapper: sidebar + content */
+  .main-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Profile area in the sidebar */
+  .profile-section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-info {
+    font-weight: bold;
+  }
+  
+  .profile-icons i {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  /* Navigation */
+  .nav-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    padding: 0.6rem 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .nav-menu li i {
+    margin-right: 8px;
+  }
+  
+  .nav-menu li:hover,
+  .nav-menu li.active {
+    color: #007bff;
+  }
+  
+  /* Content Section */
+  .content {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+  }
+  
+  /* Title */
+  .dashboard-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.4rem;
+  }
+  
+  /* Cards (Messages, Views, etc.) */
+  .cards-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card {
+    flex: 1;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .info-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .info-card .number {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  
+  /* Example Colors */
+  .red {
+    background-color: #e74c3c;
+  }
+  .blue {
+    background-color: #3498db;
+  }
+  .teal {
+    background-color: #1abc9c;
+  }
+  .orange {
+    background-color: #f39c12;
+  }
+  
+  /* Regions & Feeds Row */
+  .row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .regions, .feeds {
+    background-color: #fff;
+    padding: 1rem;
+    flex: 1;
+    border-radius: 4px;
+  }
+  
+  .map {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
+  }
+  
+  /* Feeds */
+  .feeds ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feeds li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feeds li i {
+    margin-right: 6px;
+    color: #444;
+  }
+  
+  .time {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: #999;
+  }
+  
+  /* General Stats */
+  .general-stats {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .general-stats h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-item {
+    margin-bottom: 0.8rem;
+  }
+  
+  .stat-label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  
+  .stat-bar {
+    background-color: #ccc;
+    height: 20px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #2ecc71;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
