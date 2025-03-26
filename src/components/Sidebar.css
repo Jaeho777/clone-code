@@ -1,27 +1,49 @@
 .sidebar {
     width: 200px;
     background-color: #f8f9fa;
-    padding: 1rem;
+    padding: 16px;
   }
-  
   .sidebar-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
   }
-  
   .menu {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
-  
   .menu li {
-    margin: 0.5rem 0;
+    margin: 8px 0;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 8px;
     border-radius: 4px;
   }
-  
   .menu li:hover {
     background-color: #e3e3e3;
+  }
+  @media (max-width: 1200px) {
+    .sidebar {
+      width: 180px;
+    }
+  }
+  @media (max-width: 992px) {
+    .sidebar {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .menu {
+      display: flex;
+    }
+    .menu li {
+      margin: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .menu li {
+      font-size: 14px;
+      padding: 6px;
+    }
   }
   

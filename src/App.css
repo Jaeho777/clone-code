@@ -1,12 +1,27 @@
 .app-container {
   display: flex;
-  font-family: Arial, sans-serif;
   height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
-
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: #f1f1f1;
+}
+@media (max-width: 1200px) {
+  .app-container {
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
 }
