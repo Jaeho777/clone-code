@@ -1,0 +1,81 @@
+.dashboard {
+    padding: 1rem;
+  }
+  
+  .stats-cards {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .red { background-color: #f44336; }
+  .blue { background-color: #2196f3; }
+  .green { background-color: #4caf50; }
+  .orange { background-color: #ff9800; }
+  
+  .content-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .map-section {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .feeds-section {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .feeds-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feeds-section li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .general-stats {
+    background: #fafafa;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .stat-bar {
+    margin: 0.5rem 0;
+  }
+  
+  .bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 20px;
+    width: 200px;
+    position: relative;
+  }
+  
+  .bar-filled {
+    background-color: #4caf50;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 4px 0 0 4px;
+  }
+  
