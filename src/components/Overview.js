@@ -28,6 +28,15 @@ function Overview() {
   return (
     <div className="overview-container">
       <div className="bars-section">
+      <div className="bar-block">
+          <label>New Users</label>
+          <div className="bar green">
+            <div className="bar-fill" style={{ width: "25%" }}>
+              25%
+            </div>
+          </div>
+        </div>
+
         <div className="bar-block">
           <label>New Users</label>
           <div className="bar orange">
@@ -190,7 +199,7 @@ function FooterStats() {
   return (
     <div className="footer-stats">
       <div className="footer-stats-column demo">
-        <div className="footer-stats-bar green">Demographic</div>
+        <div className="footer-stats-bar green-1">Demographic</div>
         <ul>
           <li>Language</li>
           <li>Country</li>
