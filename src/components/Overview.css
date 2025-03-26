@@ -33,6 +33,11 @@
     color: #fff;
     font-weight: bold;
   }
+
+  .green .bar-fill {
+    background-color: #4caf50;
+  }
+
   .orange .bar-fill {
     background-color: #ff9800;
   }
@@ -149,7 +154,7 @@
     font-weight: bold;
     border-radius: 4px 4px 0 0;
   }
-  .green {
+  .green-1 {
     background-color: #4caf50;
   }
   .dashboard-footer {

@@ -5,8 +5,18 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>Welcome, Mike</h2>
+        <img
+          className="avatar"
+          src="/components/w3school/avatar2.png"
+        />
+        <div className="header-text">
+          <h2>Welcome, Mike</h2>
+          <div className="header-icons">
+           
+          </div>
+        </div>
       </div>
+
       <ul className="menu">
         <li>Overview</li>
         <li>Views</li>
