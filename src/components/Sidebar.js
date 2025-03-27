@@ -1,22 +1,16 @@
-import React from 'react';
-import './Sidebar.css';
+import React from 'react'
+import './Sidebar.css'
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <img
-          className="avatar"
-          src="/components/w3school/avatar2.png"
-        />
+        <img className="avatar" src="/components/w3school/avatar2.png" alt="Avatar" />
         <div className="header-text">
           <h2>Welcome, Mike</h2>
-          <div className="header-icons">
-           
-          </div>
+          <div className="header-icons"></div>
         </div>
       </div>
-
       <ul className="menu">
         <li>Overview</li>
         <li>Views</li>
@@ -29,7 +23,7 @@ function Sidebar() {
         <li>Settings</li>
       </ul>
     </div>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar

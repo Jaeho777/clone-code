@@ -1,254 +1,236 @@
 .overview-container {
-    background-color: #f9f9f9;
-    padding: 16px;
-    margin-top: 16px;
-  }
-  .bars-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 32px;
-  }
-  .bar-block {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8px;
-  }
-  .bar-block label {
-    margin-bottom: 4px;
-    font-weight: bold;
-  }
-  .bar {
-    background-color: #ddd;
-    border-radius: 4px;
-    height: 25px;
-    position: relative;
-    overflow: hidden;
-  }
-  .bar-fill {
-    height: 100%;
-    line-height: 25px;
-    text-align: right;
-    padding-right: 8px;
-    color: #fff;
-    font-weight: bold;
-  }
-
-  .green .bar-fill {
-    background-color: #4caf50;
-  }
-
-  .orange .bar-fill {
-    background-color: #ff9800;
-  }
-  .red .bar-fill {
-    background-color: #f44336;
-  }
+  background-color: #f9f9f9;
+  padding: 16px;
+  margin-top: 16px;
+}
+.bars-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.bar-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.bar-block label {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.bar {
+  background-color: #ddd;
+  border-radius: 4px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  line-height: 25px;
+  text-align: right;
+  padding-right: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+.green .bar-fill {
+  background-color: #4caf50;
+}
+.orange .bar-fill {
+  background-color: #ff9800;
+}
+.red .bar-fill {
+  background-color: #f44336;
+}
+.bottom-section {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.countries-panel {
+  width: 100%;
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #ccc;
+}
+.countries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+.countries-table th,
+.countries-table td {
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+}
+.more-btn {
+  background-color: #eee;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.recent-users-section {
+  width: 100%;
+}
+.recent-users-card {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+.recent-user-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.recent-user-item:last-child {
+  border-bottom: none;
+}
+.recent-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.recent-user-name {
+  font-weight: bold;
+  color: #333;
+}
+.recent-comments-section {
+  margin-top: 32px;
+}
+.comment-item {
+  display: flex;
+  margin-bottom: 16px;
+}
+.comment-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.comment-content {
+  margin-left: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 100%;
+}
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.comment-author {
+  font-weight: bold;
+  font-size: 15px;
+}
+.comment-date {
+  font-size: 11px;
+  color: #666;
+}
+.comment-text {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+.footer-stats {
+  display: flex;
+  background-color: #444;
+  color: #fff;
+  margin-top: 32px;
+  padding: 16px;
+}
+.footer-stats-column {
+  width: 100%;
+  margin: 0 8px;
+}
+.footer-stats-bar {
+  padding: 8px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+}
+.green-1 {
+  background-color: #4caf50;
+}
+.dashboard-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 16px;
+  margin-top: 16px;
+  border-top: 1px solid #ccc;
+}
+.dashboard-main {
+  display: flex;
+  gap: 30px;
+}
+.dashboard-regions {
+  width: 40%;
+}
+.dashboard-regions h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.regions-map {
+  width: 100%;
+  border-radius: 4px;
+}
+.dashboard-feeds {
+  width: 100%;
+}
+.dashboard-feeds h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.feed-item {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+.feed-icon {
+  margin-right: 10px;
+}
+.feed-text {
+  width: 100%;
+}
+.feed-time {
+  color: #666;
+  font-size: 14px;
+  margin-left: 10px;
+}
+@media (max-width: 1024px) {
   .bottom-section {
-    display: flex;
-    gap: 16px;
-    margin-top: 16px;
-  }
-  .countries-panel {
-    width: 100%;
-    background: #fff;
-    padding: 16px;
-    border: 1px solid #ccc;
-  }
-  .countries-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 16px;
-  }
-  .countries-table th,
-  .countries-table td {
-    border-bottom: 1px solid #eee;
-    padding: 8px;
-  }
-  .more-btn {
-    background-color: #eee;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  .recent-users-section {
-    width: 100%;
-  }
-  .recent-users-card {
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    padding: 16px;
-  }
-  .recent-user-item {
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-  }
-  .recent-user-item:last-child {
-    border-bottom: none;
-  }
-  .recent-user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 8px;
-  }
-  .recent-user-name {
-    font-weight: bold;
-    color: #333;
-  }
-  .recent-comments-section {
-    margin-top: 32px;
-  }
-  .comment-item {
-    display: flex;
-    margin-bottom: 16px;
-  }
-  .comment-avatar img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  .comment-content {
-    margin-left: 16px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px 16px;
-    width: 100%;
-  }
-  .comment-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .comment-author {
-    font-weight: bold;
-    font-size: 15px;
-  }
-  .comment-date {
-    font-size: 11px;
-    color: #666;
-  }
-  .comment-text {
-    margin-top: 8px;
-    line-height: 1.4;
+    gap: 12px;
   }
   .footer-stats {
-    display: flex;
-    background-color: #444;
-    color: #fff;
-    margin-top: 32px;
-    padding: 16px;
+    flex-direction: column;
   }
-  .footer-stats-column {
-    width: 100%;
-    margin: 0 8px;
+}
+@media (max-width: 768px) {
+  .bottom-section {
+    flex-direction: column;
+    width: 90%;
   }
-  .footer-stats-bar {
-    padding: 8px;
-    margin-bottom: 8px;
-    font-weight: bold;
-    border-radius: 4px 4px 0 0;
-  }
-  .green-1 {
-    background-color: #4caf50;
-  }
-  .dashboard-footer {
-    background-color: #fff;
-    text-align: center;
-    padding: 16px;
+  .recent-users-section {
+    width: 90%;
     margin-top: 16px;
-    border-top: 1px solid #ccc;
   }
-
-
-  .dashboard-main {
-    display: flex;
-    gap: 30px;
+}
+@media (max-width: 768px) {
+  .overview-container {
+    width: 90%;
+    padding: 8px;
   }
-  
-  .dashboard-regions {
-    width: 40%;
+  .bar-fill {
+    padding-right: 4px;
   }
-  
-  .dashboard-regions h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
+  .comment-content {
+    padding: 4px 8px;
   }
-  
-  .regions-map {
-    width: 100%;
-    border-radius: 4px;
-  }
-  
-
-  .dashboard-feeds {
-    width: 100%;
-  }
-  
-  .dashboard-feeds h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  
-  .feed-item {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    justify-content: space-between;
-  }
-  
-  .feed-icon {
-    margin-right: 10px;
-  }
-  
-  .feed-text {
-    width: 100%;
-  }
-  
-  .feed-time {
-    color: #666;
-    font-size: 14px;
-    margin-left: 10px;
-  }
-
-
-  @media (max-width: 1200px) {
-    .bottom-section {
-      gap: 12px;
-    }
-    .footer-stats {
-      flex-direction: column;
-    }
-  }
-  @media (max-width: 992px) {
-    .bottom-section {
-      flex-direction: column;
-      width: 90%;
-
-    }
-    .recent-users-section {
-      width: 90%;
-      margin-top: 16px;
-    }
-  }
-  @media (max-width: 768px) {
-    .overview-container {
-      width: 90%;
-      padding: 8px;
-    }
-    .bar-fill {
-      padding-right: 4px;
-    }
-    .comment-content {
-      padding: 4px 8px;
-    }
-  }
-  
+}

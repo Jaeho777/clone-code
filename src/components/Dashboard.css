@@ -1,51 +1,50 @@
 .dashboard {
-    padding: 16px;
-  }
+  padding: 16px;
+}
+.stats-cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.card {
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  color: #fff;
+  min-width: 120px;
+}
+.red {
+  background-color: #f44336;
+}
+.blue {
+  background-color: #2196f3;
+}
+.green {
+  background-color: #4caf50;
+}
+.orange {
+  background-color: #ff9800;
+}
+@media (max-width: 1024px) {
   .stats-cards {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .stats-cards {
+    flex-direction: column;
   }
   .card {
-    width: 100%;
-    padding: 16px;
-    border-radius: 4px;
-    color: #fff;
-    min-width: 120px;
+    width: 90%;
+    margin-bottom: 12px;
+    min-width: 50px;
   }
-  .red {
-    background-color: #f44336;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 8px;
   }
-  .blue {
-    background-color: #2196f3;
+  .card {
+    padding: 12px;
   }
-  .green {
-    background-color: #4caf50;
-  }
-  .orange {
-    background-color: #ff9800;
-  }
-  @media (max-width: 1200px) {
-    .stats-cards {
-      gap: 12px;
-    }
-  }
-  @media (max-width: 992px) {
-    .stats-cards {
-      flex-direction: column;
-    }
-    .card {
-      width: 90%;
-      margin-bottom: 12px;
-      min-width: 50px;
-    }
-  }
-  @media (max-width: 768px) {
-    .dashboard {
-      padding: 8px;
-    }
-    .card {
-      padding: 12px;
-    }
-  }
-  
+}
