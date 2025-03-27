@@ -7,7 +7,7 @@
     margin-bottom: 16px;
   }
   .card {
-    flex: 1;
+    width: 100%;
     padding: 16px;
     border-radius: 4px;
     color: #fff;
@@ -35,8 +35,9 @@
       flex-direction: column;
     }
     .card {
+      width: 90%;
       margin-bottom: 12px;
-      min-width: auto;
+      min-width: 50px;
     }
   }
   @media (max-width: 768px) {

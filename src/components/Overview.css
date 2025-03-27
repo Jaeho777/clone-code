@@ -50,7 +50,7 @@
     margin-top: 16px;
   }
   .countries-panel {
-    flex: 1;
+    width: 100%;
     background: #fff;
     padding: 16px;
     border: 1px solid #ccc;
@@ -73,7 +73,7 @@
     border-radius: 4px;
   }
   .recent-users-section {
-    flex: 1;
+    width: 100%;
   }
   .recent-users-card {
     background-color: #fff;
@@ -118,7 +118,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 8px 16px;
-    flex: 1;
+    width: 100%;
   }
   .comment-header {
     display: flex;
@@ -127,10 +127,10 @@
   }
   .comment-author {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 15px;
   }
   .comment-date {
-    font-size: 0.8rem;
+    font-size: 11px;
     color: #666;
   }
   .comment-text {
@@ -145,7 +145,7 @@
     padding: 16px;
   }
   .footer-stats-column {
-    flex: 1;
+    width: 100%;
     margin: 0 8px;
   }
   .footer-stats-bar {
@@ -182,13 +182,12 @@
   
   .regions-map {
     width: 100%;
-    border: 1px solid #ccc;
     border-radius: 4px;
   }
   
 
   .dashboard-feeds {
-    flex: 1;
+    width: 100%;
   }
   
   .dashboard-feeds h2 {
@@ -211,7 +210,7 @@
   }
   
   .feed-text {
-    flex: 1;
+    width: 100%;
   }
   
   .feed-time {
@@ -232,13 +231,17 @@
   @media (max-width: 992px) {
     .bottom-section {
       flex-direction: column;
+      width: 90%;
+
     }
     .recent-users-section {
+      width: 90%;
       margin-top: 16px;
     }
   }
   @media (max-width: 768px) {
     .overview-container {
+      width: 90%;
       padding: 8px;
     }
     .bar-fill {

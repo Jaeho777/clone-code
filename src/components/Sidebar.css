@@ -1,8 +1,11 @@
 .sidebar {
-  width: 240px;
+  width: 200px;
+  z-index: 3;
+  position: fixed;
   background-color: #f8f9fa;
-  padding: 16px;
   box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
 }
 
 .sidebar-header {
@@ -56,16 +59,13 @@
 
 @media (max-width: 992px) {
   .sidebar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: none;
   }
   .menu {
-    display: flex;
+    display: none;
   }
   .menu li {
-    margin: 0;
+    display: none;
   }
 }
 
