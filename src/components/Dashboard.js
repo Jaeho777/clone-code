@@ -1,12 +1,11 @@
-import React from 'react';
-import './Dashboard.css';
-import Overview from './Overview';
+import React from 'react'
+import './Dashboard.css'
+import Overview from './Overview'
 
 function Dashboard() {
   return (
     <div className="dashboard">
       <h1>My Dashboard</h1>
-      
       <div className="stats-cards">
         <div className="card red">
           <p>Messages</p>
@@ -25,10 +24,9 @@ function Dashboard() {
           <h2>50</h2>
         </div>
       </div>
-
       <Overview />
     </div>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard

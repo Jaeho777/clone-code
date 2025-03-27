@@ -1,71 +1,55 @@
-import React from "react";
-import "./Overview.css";
+import React from "react"
+import "./Overview.css"
 
 function Overview() {
   const recentUsers = [
     { id: 1, name: "Mike", avatar: "/components/w3school/avatar2.png" },
     { id: 2, name: "Jill", avatar: "/components/w3school/avatar5.png" },
-    { id: 3, name: "Jane", avatar: "/components/w3school/avatar6.png" },
-  ];
-
+    { id: 3, name: "Jane", avatar: "/components/w3school/avatar6.png" }
+  ]
   const recentComments = [
     {
       id: 1,
       name: "John",
       date: "Sep 29, 2014, 9:12 PM",
       avatar: "/components/w3school/avatar3.png",
-      text: "Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet...",
+      text: "Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet..."
     },
     {
       id: 2,
       name: "Bo",
       date: "Sep 28, 2014, 10:15 PM",
       avatar: "/components/w3school/avatar1.png",
-      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
-    },
-  ];
-
+      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+    }
+  ]
   return (
     <div className="overview-container">
       <div className="bars-section">
-      <div className="bar-block">
+        <div className="bar-block">
           <label>New Users</label>
           <div className="bar green">
-            <div className="bar-fill" style={{ width: "25%" }}>
-              25%
-            </div>
+            <div className="bar-fill" style={{ width: "25%" }}>25%</div>
           </div>
         </div>
-
         <div className="bar-block">
           <label>New Users</label>
           <div className="bar orange">
-            <div className="bar-fill" style={{ width: "50%" }}>
-              50%
-            </div>
+            <div className="bar-fill" style={{ width: "50%" }}>50%</div>
           </div>
         </div>
         <div className="bar-block">
           <label>Bounce Rate</label>
           <div className="bar red">
-            <div className="bar-fill" style={{ width: "75%" }}>
-              75%
-            </div>
+            <div className="bar-fill" style={{ width: "75%" }}>75%</div>
           </div>
         </div>
       </div>
-
       <div className="dashboard-main">
-      <div className="dashboard-regions">
+        <div className="dashboard-regions">
           <h2>Regions</h2>
-          <img
-            src="/components/w3school/region.jpg"
-            alt="Map"
-            className="regions-map"
-          />
+          <img src="/components/w3school/region.jpg" alt="Map" className="regions-map" />
         </div>
-
-
         <div className="dashboard-feeds">
           <h2>Feeds</h2>
           <div className="feed-item">
@@ -73,45 +57,38 @@ function Overview() {
             <div className="feed-text">New record, over 90 views.</div>
             <div className="feed-time">10 mins</div>
           </div>
-
           <div className="feed-item">
             <span className="feed-icon">🔔</span>
             <div className="feed-text">Database error.</div>
             <div className="feed-time">15 mins</div>
           </div>
-
           <div className="feed-item">
             <span className="feed-icon">👥</span>
             <div className="feed-text">New record, over 40 users.</div>
             <div className="feed-time">17 mins</div>
           </div>
-
           <div className="feed-item">
             <span className="feed-icon">💬</span>
             <div className="feed-text">New comments.</div>
             <div className="feed-time">25 mins</div>
           </div>
-
           <div className="feed-item">
             <span className="feed-icon">🔖</span>
             <div className="feed-text">Check transactions.</div>
             <div className="feed-time">28 mins</div>
           </div>
-
           <div className="feed-item">
             <span className="feed-icon">💻</span>
             <div className="feed-text">CPU overload.</div>
             <div className="feed-time">35 mins</div>
           </div>
-
           <div className="feed-item">
             <span className="feed-icon">🔗</span>
             <div className="feed-text">New shares.</div>
             <div className="feed-time">39 mins</div>
           </div>
         </div>
-        </div>
-
+      </div>
       <div className="bottom-section">
         <div className="countries-panel">
           <h3>Countries</h3>
@@ -151,27 +128,21 @@ function Overview() {
           </table>
           <button className="more-btn">More Countries ➔</button>
         </div>
-
         <div className="recent-users-section">
           <h3>Recent Users</h3>
           <div className="recent-users-card">
-            {recentUsers.map((user) => (
+            {recentUsers.map(user => (
               <div className="recent-user-item" key={user.id}>
-                <img
-                  src={user.avatar}
-                  alt={user.name}
-                  className="recent-user-avatar"
-                />
+                <img src={user.avatar} alt={user.name} className="recent-user-avatar" />
                 <span className="recent-user-name">{user.name}</span>
               </div>
             ))}
           </div>
         </div>
       </div>
-
       <div className="recent-comments-section">
         <h3>Recent Comments</h3>
-        {recentComments.map((comment) => (
+        {recentComments.map(comment => (
           <div className="comment-item" key={comment.id}>
             <div className="comment-avatar">
               <img src={comment.avatar} alt={comment.name} />
@@ -186,14 +157,13 @@ function Overview() {
           </div>
         ))}
       </div>
-
       <FooterStats />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default Overview;
+export default Overview
 
 function FooterStats() {
   return (
@@ -224,7 +194,7 @@ function FooterStats() {
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
 function Footer() {
@@ -233,5 +203,5 @@ function Footer() {
       <p>FOOTER</p>
       <p>Powered by w3.css</p>
     </div>
-  );
+  )
 }
